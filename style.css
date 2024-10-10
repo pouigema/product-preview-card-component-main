@@ -52,8 +52,11 @@ img{
 .commander:hover{
     background-color: hsl(158, 52%, 11%);;
 }
+
 .reduction{
     margin: 25px 0;
+    position: relative;
+    top: -17px;
 }
 .panier{
     width: 10%; 
