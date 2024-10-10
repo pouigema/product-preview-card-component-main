@@ -91,9 +91,11 @@ span{
  
 /* ecran inferieur */
 @media screen and (max-width:550px){
-   
+    
 body{
-   
+    background-color:  hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
     align-items: none;
     height: 120vh;
 }
@@ -105,10 +107,13 @@ body{
     width: 90%;
     max-width: 400px;
     background-color: none;
- 
+    border-radius: 10px;
  }
 /* PARTIE GAUCHE */
- 
+.block-gauche{
+    width: 100%;
+    
+}
 img{
     width:100%;
     border-radius: 10px 10px 0 0;
@@ -117,8 +122,11 @@ img{
 
 /* PARTIE DROIT  */
 .block-droit{
+    color: black;
     border-radius: 0 0 10px 10px;
+    /* display: flex; */
     flex-direction: column;
+    width: 100%;
     padding: 20px 0px 40px 0;
     background-color: white;   
     max-width: 375px;
@@ -127,9 +135,18 @@ img{
     top: 485px;
 }
 .commander{
+    background-color:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
     padding: 15px 30%;
+    border-radius: 10px;
     margin: 5%;
+    
  }
+.commander:hover{
+    background-color: hsl(158, 52%, 11%);;
+}
+
+
 .reduction{
     margin: 15px 0;
 }
@@ -142,19 +159,41 @@ img{
       
 }
  .prix{
+    font-weight: 900;
     font-size: 40px;
- }
+    color: hsl(158, 36%, 37%) ;
+    font-family: 'Montserrat' ;
+}
 h1{
+    /* padding-left: 15px; */
     font-size: 35px;
+    margin:10px 0;
+    font-family: 'Fraunces';
+    font-weight: 900;
 }
 .parfum{
+    /* padding: 20px 0 0 15px ; */
+    text-transform: uppercase;
     font-size: 20px;
+    letter-spacing: 4px;
+    color: hsl(212, 21%, 14%);
 }
 span{
+   
+    font-family: 'Montserrat';
+    color:  hsl(212, 21%, 14%);
     font-size: 15px;
 }
-}
+.prix1{
+    text-decoration: line-through ;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+ }
 
+ 
+ 
+    
 @media screen and (max-width:375px){
     .contenu{
         width:90%;
