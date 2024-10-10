@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+body{
+    background-color:  hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTENUE */
+
+.contenu{
+    width: 100%;
+    background-color:hsl(0, 0%, 100%);
+    max-width: 500px;
+    display: flex;
+    border-radius: 10px;
+ }
+/* PARTIE GAUCHE */
+.block-gauche{
+    width: 100%;
+    
+}
+img{
+    width:100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/* PARTIE DROIT  */
+.block-droit{
+    color: black;
+    width: 100%;
+    padding: 25px 25px 0 25px;
+    
+}
+.commander{
+    background-color:hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 11px 50px;
+    border-radius: 10px;
+    /* position: absolute; */
+ }
+.commander:hover{
+    background-color: hsl(158, 52%, 11%);;
+}
+.reduction{
+    margin: 25px 0;
+}
+.panier{
+    width: 10%; 
+}
+.prix{
+    font-weight: 900;
+    font-size: 27px;
+    color: hsl(158, 36%, 37%) ;
+    font-family: 'Montserrat' ;
+}
+h1{
+    font-size: 27px;
+    margin:10px 0;
+    font-family: 'Fraunces';
+    font-weight: 900;
+}
+.parfum{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: hsl(212, 21%, 14%);
+}
+span{
+    font-family: 'Montserrat';
+    color:  hsl(212, 21%, 14%);
+    font-size: 12px;
+}
+.prix1{
+    text-decoration: line-through ;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
+ }
+
+ 
+/* ecran inferieur */
+@media screen and (max-width:550px){
+   
+body{
+   
+    align-items: none;
+    height: 120vh;
+}
+
+/* CONTENUE */
+
+.contenu{
+    margin-top: 25px;
+    width: 90%;
+    max-width: 400px;
+    background-color: none;
+ 
+ }
+/* PARTIE GAUCHE */
+ 
+img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* PARTIE DROIT  */
+.block-droit{
+    border-radius: 0 0 10px 10px;
+    flex-direction: column;
+    padding: 20px 0px 40px 0;
+    background-color: white;   
+    max-width: 375px;
+    position: absolute; 
+    padding-left: 25px;
+    top: 485px;
+}
+.commander{
+    padding: 15px 30%;
+    margin: 5%;
+ }
+.reduction{
+    margin: 15px 0;
+}
+
+.panier{
+    width: 8%;
+    position: relative;
+    top: 7px;
+    left: -5px;
+      
+}
+ .prix{
+    font-size: 40px;
+ }
+h1{
+    font-size: 35px;
+}
+.parfum{
+    font-size: 20px;
+}
+span{
+    font-size: 15px;
+}
+}
+
+@media screen and (max-width:375px){
+    .contenu{
+        width:90%;
+        position: relative;
+        left: 18px;
+   
+        margin-left: 0;
+        display: block;
+        margin:10%;
+        border-radius: 5px;
+        margin: 12px 0;
+    }
+        
+    .img{
+        border-radius: 5px 5px 0 0;
+        width:100%;
+        /* border-top-right-radius: 5px;
+        border-bottom-left-radius: 0; */
+        /* height: 40%; */
+    }
+
+    /* PARTIE DROIT  */
+    .commander{
+        padding: 12px 95px;
+        border-radius: 5px;
+        font-size: 10px;
+        top: 20px;
+        right: -10px;
+        position:relative;
+    }
+   
+    h1{
+        font-size: 25px;
+        font-family: 'Fraunces';
+    }
+    .block-droit{
+    position: relative;
+    background-color: hsl(0, 0%, 100%);;
+    top: -19%;
+    margin: 0;
+    padding: 20px;
+    width: 88.2%;
+    /* background-color: red; */
+    }
+    span{
+        color:  hsl(212, 21%, 14%);
+        font-size: 12px;
+    }
+
+    img{
+        border-radius: 5px 5px 0 0;
+        width:100%;
+        /* border-top-right-radius: 5px;
+        border-bottom-left-radius: 0; */
+        /* height: 40%; */
+    }
+    .image{
+        width: 10%;
+        left: 56px;
+        top: 5px;
+        /* position: absolute; */
+    }
+}
+
+
+@media screen and (max-width:320px){
+    .contenu{
+        height: 160vh;
+    }  
+    .block-droit{
+        top: -16%;
+        margin: 0;
+        padding: 20px;
+        width: 86.5%;
+        /* background-color: red; */
+        }
+}
